@@ -126,9 +126,13 @@ pip-delete-this-directory.txt
 .vscode/
 result.xml
 
+# Local render cache
+.swift-cache/
+.tmp-chrome-wireframes/
+images/ux/_svg_sources/
+
 # Pylint dirs/files
 .pylint.d/
 
 # Ignore setuptools development files in the PyLS subrepo
 external-deps/python-language-server/python_language_server.egg-info/
-

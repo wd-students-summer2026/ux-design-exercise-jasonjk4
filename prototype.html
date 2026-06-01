@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Plate Prototype | Jason Kim</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/prototype.js" defer></script>
+  </head>
+  <body class="prototype-page">
+    <header>
+      <nav>
+        <a href="user_experience_design.html">User Experience Design</a>
+      </nav>
+      <h1>Campus Plate Prototype</h1>
+      <p>
+        A clickable mobile prototype for discovering nearby campus meals,
+        filtering choices, adding food to a cart, and placing an order.
+      </p>
+    </header>
+
+    <main class="prototype-layout" aria-live="polite">
+      <aside class="prototype-index" aria-label="Prototype screens">
+        <h2>Screens</h2>
+        <a href="#discover" data-prototype-link="discover">Discover</a>
+        <a href="#results" data-prototype-link="results">Results</a>
+        <a href="#filters" data-prototype-link="filters">Filters</a>
+        <a href="#menu" data-prototype-link="menu">Menu</a>
+        <a href="#cart" data-prototype-link="cart">Cart</a>
+        <a href="#checkout" data-prototype-link="checkout">Checkout</a>
+        <a href="#status" data-prototype-link="status">Status</a>
+      </aside>
+
+      <div class="prototype-phone">
+        <section
+          class="prototype-screen is-active"
+          data-prototype-screen="discover"
+          id="discover"
+        >
+          <img
+            src="images/ux/wireframe-01-discover.png"
+            alt="Discover screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot discover-search"
+            href="#results"
+            data-prototype-link="results"
+            >Search for food</a
+          >
+          <a
+            class="hotspot discover-card"
+            href="#menu"
+            data-prototype-link="menu"
+            >Open a featured restaurant</a
+          >
+        </section>
+
+        <section
+          class="prototype-screen"
+          data-prototype-screen="results"
+          id="results"
+        >
+          <img
+            src="images/ux/wireframe-02-results.png"
+            alt="Results screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot results-filter"
+            href="#filters"
+            data-prototype-link="filters"
+            >Open filters</a
+          >
+          <a
+            class="hotspot results-card"
+            href="#menu"
+            data-prototype-link="menu"
+            >Open restaurant menu</a
+          >
+        </section>
+
+        <section
+          class="prototype-screen"
+          data-prototype-screen="filters"
+          id="filters"
+        >
+          <img
+            src="images/ux/wireframe-04-filters.png"
+            alt="Filters screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot filters-apply"
+            href="#results"
+            data-prototype-link="results"
+            >Apply filters</a
+          >
+          <a
+            class="hotspot filters-clear"
+            href="#results"
+            data-prototype-link="results"
+            >Clear filters</a
+          >
+        </section>
+
+        <section class="prototype-screen" data-prototype-screen="menu" id="menu">
+          <img
+            src="images/ux/wireframe-03-menu.png"
+            alt="Restaurant menu screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot menu-cart"
+            href="#cart"
+            data-prototype-link="cart"
+            >View cart</a
+          >
+        </section>
+
+        <section class="prototype-screen" data-prototype-screen="cart" id="cart">
+          <img
+            src="images/ux/wireframe-05-cart.png"
+            alt="Cart screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot cart-checkout"
+            href="#checkout"
+            data-prototype-link="checkout"
+            >Go to checkout</a
+          >
+        </section>
+
+        <section
+          class="prototype-screen"
+          data-prototype-screen="checkout"
+          id="checkout"
+        >
+          <img
+            src="images/ux/wireframe-06-checkout.png"
+            alt="Checkout screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot checkout-place"
+            href="#status"
+            data-prototype-link="status"
+            >Place order</a
+          >
+        </section>
+
+        <section
+          class="prototype-screen"
+          data-prototype-screen="status"
+          id="status"
+        >
+          <img
+            src="images/ux/wireframe-07-status.png"
+            alt="Order status screen in the Campus Plate prototype"
+          />
+          <a
+            class="hotspot status-again"
+            href="#discover"
+            data-prototype-link="discover"
+            >Order again</a
+          >
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
